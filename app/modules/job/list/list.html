@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Jobs ({{ vm.jobCollection.count }})
+        <button class="btn btn-xs btn-primary" ui-sref="jobs.create({id: job.id})">Add New Job</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="job in vm.jobCollection.data">
+            <th scope="row">{{ job.id }}</th>
+            <td>{{ job.description }}</td>
+            <td>{{ job.status == 0 ? 'Open' : 'Closed' }}</td>
+            <td>
+                <button class="btn btn-xs btn-default" ui-sref="jobs.view({id: job.id})">View</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

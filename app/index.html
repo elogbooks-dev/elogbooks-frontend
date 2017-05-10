@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="elogbooks">
+<head>
+  <meta charset="utf-8">
+  <title>Elogbooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Elogbooks</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                  <li><a ui-sref="quotes.list">Quotes</a></li>
+                  <li><a ui-sref="jobs.list">Jobs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div ui-view></div>
+
+    <!-- VENDORS -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- APP CODE -->
+    <script src="app.js"></script>
+    <script src="modules/quote/quote.routing.js"></script>
+    <script src="modules/quote/list/list.controller.js"></script>
+    <script src="modules/job/job.routing.js"></script>
+    <script src="modules/job/list/list.controller.js"></script>
+    <script src="modules/job/view/view.controller.js"></script>
+    <script src="modules/job/create/create.controller.js"></script>
+</body>
+</html>

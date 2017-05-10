@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="quote in vm.quoteCollection">
+        <th scope="row">{{ quote.id }}</th>
+        <td>{{ quote.description }}</td>
+        <td>
+            <button class="btn btn-xs btn-default">View</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

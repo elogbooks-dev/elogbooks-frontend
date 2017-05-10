@@ -1,0 +1,15 @@
+{
+  "name": "Elogbooks",
+  "description": "A simple frontend",
+  "version": "0.0.1",
+  "homepage": "https://github.com/elogbooks-dev/elogbooks-frontend",
+  "license": "MIT",
+  "private": true,
+  "directory": "app",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-ui-router": "0.2.15",
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7"
+  }
+}
