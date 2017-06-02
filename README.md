@@ -1,5 +1,9 @@
 # Elogbooks Test Frontend
 
+#### Requirements
+1. git (https://git-scm.com/downloads)
+2. node (https://nodejs.org/en/download/package-manager/)
+
 #### Installation
 1. Run: 
     - npm install (that should install bower_components if not run 'bower install')
